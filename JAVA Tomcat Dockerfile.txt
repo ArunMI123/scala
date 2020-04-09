@@ -1,0 +1,20 @@
+FROM tutum/jboss
+ADD target/GPCS-0.0.1-SNAPSHOT.jar GPCS-0.0.1-SNAPSHOT.jar
+EXPOSE 9090
+ENTRYPOINT ["java","-jar","GPCS-0.0.1-SNAPSHOT.jar"]
+
+FROM jboss/base-jdk:8
+MAINTAINER Kumaran "arunkumar.anandhan@kumaran.in"
+WORKDIR /home/kumaran/MicroServices/GPCS
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+ADD target/*.jar /home/kumaran/MicroServices/GPCS/GPCS.jar
+EXPOSE 9090
+CMD ["java", "-classpath","/home/kumaran/MicroServices/GPCS", "-jar", "GPCS.jar"]
+
+
+
+FROM tomcat:latest
+VOLUME /tmp
+COPY springboot.war /usr/local/tomcat/webapps/app.war
+RUN sh -c 'touch /usr/local/tomcat/webapps/app.war'
+ENTRYPOINT ["sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar /usr/local/tomcat/webapps/app.war" ]
