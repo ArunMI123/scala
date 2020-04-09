@@ -1,0 +1,53 @@
+{
+	"browser": "ie",
+	"url": "http://172.24.3.10:7007/icap/login.do",
+	"transactions": [{
+			"transactionId": 1007,
+			"projectId": 10045,
+			"transactionName": "LOGIN",
+			"attributes": [{
+					"id": 101,
+					"seqNo": 1,
+					"name": "username",
+					"type": "textbox",
+					"waitTime": 120,
+					"index":"",
+					"parent_attr_id": 0,
+					"fieldDetails": [{
+							"type": "name",
+							"value": "networkId"
+						}
+					]
+
+				},
+				{
+					"id": 102,
+					"seqNo": 2,
+					"name": "login",
+					"type": "button",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"index":"",
+					"fieldDetails": [{
+						"type": "name",
+						"value": "login"
+					}]
+				}, {
+					"id": 103,
+					"seqNo": 3,
+					"name": "logout",
+					"type": "button",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"index":"",
+					"fieldDetails": [{
+						"type": "linktext",
+						"value": "Logout"
+					}]
+				}
+			]
+		}
+
+	]
+
+}

@@ -1,0 +1,161 @@
+{
+	"browser": "ie",
+	"url": "http://172.24.3.10:7007/icap/login.do",
+	"transactions": [{
+			"transactionId": 1007,
+			"projectId": 10045,
+			"transactionName": "LOGIN",
+			"attributes": [{
+					"id": 101,
+					"seqNo": 1,
+					"name": "username",
+					"type": "textbox",
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": "",
+					"parent_attr_id": 0,
+					"frame_attr_id": 0,
+					"fieldDetails": [{
+						"type": "name",
+						"value": "networkId"
+					}]
+
+				},
+				{
+					"id": 102,
+					"seqNo": 2,
+					"name": "login",
+					"type": "button",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"windowOrFrame": "",
+					"frame_attr_id": 0,
+					"index": "",
+					"fieldDetails": [{
+						"type": "name",
+						"value": "login"
+					}]
+				}, {
+					"id": 103,
+					"seqNo": 3,
+					"name": "createNewClient",
+					"type": "link",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"windowOrFrame": "",
+					"frame_attr_id": 0,
+					"index": "",
+					"fieldDetails": [{
+						"type": "linktext",
+						"value": "Create New Client"
+					}]
+				}, {
+					"id": 104,
+					"seqNo": 4,
+					"name": "SearchGif",
+					"type": "button",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"windowOrFrame": "",
+					"frame_attr_id": 0,
+					"index": "",
+					"fieldDetails": [{
+						"type": "name",
+						"value": "saveButton"
+					}]
+				}, {
+					"id": 105,
+					"seqNo": 5,
+					"name": "createCustomer",
+					"type": "button",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"windowOrFrame": "window",
+					"frame_attr_id": 0,
+					"index": "",
+					"fieldDetails": [{
+						"type": "name",
+						"value": "btnCreateCustomer"
+					}]
+				}, {
+					"id": 106,
+					"seqNo": 6,
+					"name": "populateCustomer",
+					"type": "button",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"windowOrFrame": "window",
+					"frame_attr_id": 0,
+					"index": "",
+					"fieldDetails": [{
+						"type": "id",
+						"value": "btnDefaultVal"
+					}]
+				}, {
+					"id": 107,
+					"seqNo": 7,
+					"name": "legalName",
+					"type": "textbox",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"windowOrFrame": "window",
+					"frame_attr_id": 0,
+					"index": "",
+					"fieldDetails": [{
+						"type": "name",
+						"value": "legalName"
+					}]
+				}, {
+					"id": 108,
+					"seqNo": 8,
+					"name": "legalEntityIdentifier",
+					"type": "textbox",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"windowOrFrame": "window",
+					"frame_attr_id": 0,
+					"index": "",
+					"fieldDetails": [{
+						"type": "name",
+						"value": "legalEntityIdentifier"
+					}]
+				},
+				{
+					"id": 109,
+					"seqNo": 9,
+					"name": "createNewCustomer",
+					"type": "button",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"windowOrFrame": "window",
+					"frame_attr_id": 0,
+					"index": "",
+					"fieldDetails": [{
+						"type": "name",
+						"value": "btnCreateCustomer"
+					}]
+				},
+				{
+					"id": 110,
+					"seqNo":10,
+					"name": "FrameData",
+					"type": "frame",
+					"waitTime": 120,
+					"parent_attr_id": 0,
+					"windowOrFrame": "",
+					"frame_attr_id": 0,
+					"index": "",
+					"fieldDetails": [{
+						"type": "name",
+						"value": "frame"
+					},{
+						"type": "xpath",
+						"value": "asdsad"
+					}]
+				}
+			]
+		}
+
+	]
+
+}

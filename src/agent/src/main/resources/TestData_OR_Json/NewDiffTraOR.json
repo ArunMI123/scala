@@ -1,0 +1,840 @@
+{
+	"browser": "ie",
+	"url": "http://172.24.30.45:8080/icap/login.do",
+	"projectValidation":[{
+	     "CPV1":"Error 404--Not Found",
+		 "CPV2":"National Support Line",
+		 "CPV3":"The Page cannot be found",
+		 "CPV4":"The requested URL could not be Retrieved",
+		 "CPV5":"Error 503"
+	}],
+	"transactions": [{
+		"transactionId": 1001,
+		"projectId": 10045,
+		"transactionName": "LOGIN",
+		"attributes": [
+
+			{
+				"id": 101,
+				"seqNo": 1,
+				"name": "username",
+				"type": "textbox",
+				"waitTime": 120,
+				"index": "",
+				"parentAttrId": 0,
+				"fieldDetails": [{
+					"type": "name",
+					"value": "networkId"
+					
+				}]
+
+			},
+			{
+				"id": 102,
+				"seqNo": 2,
+				"name": "login",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "login"
+				}]
+			}
+
+
+		]
+	}, {
+		"transactionId": 1002,
+		"projectId": 10045,
+		"transactionName": "ROLE",
+		"attributes": [{
+				"id": 103,
+				"seqNo": 3,
+				"name": "RoleSelction",
+				"type": "grid",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"columnName": "104,105",
+				"index": "",
+				"fieldDetails": [{
+					"type": "xpath",
+					"value": "//table/tbody/tr/td/table[@width='650']"
+				}]
+			},
+			{
+				"id": 104,
+				"seqNo": 4,
+				"name": "Roles",
+				"type": "Columnname",
+				"waitTime": 120,
+				"parentAttrId": 103,
+				"index": "",
+				"fieldDetails": [{
+					"type": "",
+					"value": ""
+				}]
+			},
+			{
+				"id": 105,
+				"seqNo": 5,
+				"name": "Sub Role Code",
+				"type": "Columnname",
+				"waitTime": 120,
+				"parentAttrId": 103,
+				"index": "",
+				"fieldDetails": [{
+					"type": "",
+					"value": ""
+				}]
+			},
+			{
+				"id": 106,
+				"seqNo": 6,
+				"name": "RoleClick",
+				"type": "radio",
+				"waitTime": 120,
+				"parentAttrId": 103,
+				"actionField": 1,
+				"index": "",
+				"fieldDetails": [{
+					"type": "",
+					"value": ""
+				}]
+			}, {
+				"id": 107,
+				"seqNo": 7,
+				"name": "RoleLogin",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "Login"
+				}]
+			}
+		]
+	}, {
+		"transactionId": 1003,
+		"projectId": 10045,
+		"transactionName": "HOME",
+		"attributes": [{
+			"id": 185,
+			"seqNo": 3,
+			"name": "CIPNotSubmit",
+			"type": "grid",
+			"waitTime": 120,
+			"parentAttrId": 0,
+			"columnName": "186",
+			"index": "",
+			"fieldDetails": [{
+				"type": "id",
+				"value": "creditsInProcessQueueTable"
+			}]
+		}, {
+			"id": 186,
+			"seqNo": 6,
+			"name": "Borrower Name",
+			"type": "columnName",
+			"waitTime": 120,
+			"parentAttrId": 185,
+			"actionField": 0,
+			"index": "",
+			"fieldDetails": [{
+				"type": "",
+				"value": ""
+			}]
+		}, {
+			"id": 187,
+			"seqNo": 6,
+			"name": "DateClick",
+			"type": "Link",
+			"waitTime": 120,
+			"parentAttrId": 185,
+			"actionField": 1,
+			"index": "",
+			"fieldDetails": [{
+				"type": "",
+				"value": ""
+			}]
+		}]
+	}, {
+		"transactionId": 1004,
+		"projectId": 10045,
+		"transactionName": "CREATE_CUSTOMER",
+		"attributes": [{
+				"id": 108,
+				"seqNo": 8,
+				"name": "createNewClient",
+				"type": "link",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "linktext",
+					"value": "Create New Client"
+				}]
+			}, {
+				"id": 109,
+				"seqNo": 9,
+				"name": "SearchGif",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "saveButton"
+				}]
+			}, {
+				"id": 110,
+				"seqNo": 110,
+				"name": "createCustomer",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "window",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "btnCreateCustomer"
+				}]
+			}, {
+				"id": 111,
+				"seqNo": 11,
+				"name": "populateCustomer",
+				"type": "button",
+				"waitTime": 3,
+				"parentAttrId": 0,
+				"windowOrFrame": "window",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "btnDefaultVal"
+				}]
+			}, {
+				"id": 112,
+				"seqNo": 12,
+				"name": "legalName",
+				"type": "textbox",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "window",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "legalName"
+				}]
+			}, {
+				"id": 113,
+				"seqNo": 13,
+				"name": "legalEntityIdentifier",
+				"type": "textbox",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "window",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "legalEntityIdentifier"
+				}]
+			},
+			{
+				"id": 114,
+				"seqNo": 14,
+				"name": "createNewCustomer",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "window",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "btnCreateCustomer"
+				}]
+			}, {
+				"id": 115,
+				"seqNo": 15,
+				"name": "SearchResultLink",
+				"type": "link",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "linktext",
+					"value": "kart2224"
+				}]
+			}, {
+				"id": 116,
+				"seqNo": 16,
+				"name": "SearchIcap",
+				"type": "textbox",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "xpath",
+					"value": "//input[@name='searchStr'][@size='70']"
+				}]
+			}, {
+				"id": 117,
+				"seqNo": 17,
+				"name": "SearchIcapButton",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "xpath",
+					"value": "//input[@name='searchBtn'][@value='Search iCap']"
+				}]
+			}
+		]
+	}, {
+		"transactionId": 1005,
+		"projectId": 10045,
+		"transactionName": "CREATE_CLIENT",
+		"attributes": [{
+				"id": 118,
+				"seqNo": 15,
+				"name": "CreateClintButton",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "xpath",
+					"value": "//input[@name='createClient'][@value='Create Client']"
+				}]
+			},
+			{
+				"id": 119,
+				"seqNo": 19,
+				"name": "ClintStatus",
+				"type": "dropdown",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "clientStatus"
+				}]
+			},
+			{
+				"id": 120,
+				"seqNo": 20,
+				"name": "SIC code",
+				"type": "checkbox",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "verifySic.value"
+				}]
+			},
+			{
+				"id": 121,
+				"seqNo": 21,
+				"name": "RealtionShipManager",
+				"type": "dropdown",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "assignedRelationManager"
+				}]
+			}, {
+				"id": 122,
+				"seqNo": 22,
+				"name": "criditSpecialist",
+				"type": "dropdown",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "assignedCreditSpecialist"
+				}]
+			},
+			{
+				"id": 123,
+				"seqNo": 23,
+				"name": "Finish",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "next"
+				}]
+			}, {
+				"id": 124,
+				"seqNo": 24,
+				"name": "Legal Structure",
+				"type": "dropdown",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "legalStructure"
+				}]
+
+			}, {
+				"id": 125,
+				"seqNo": 25,
+				"name": "Legal Structure alert",
+				"type": "alert",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "",
+					"value": ""
+				}]
+
+			}, {
+				"id": 126,
+				"seqNo": 26,
+				"name": "Percentage Of Business",
+				"type": "textbox",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "percentageOfBusiness"
+				}]
+			}, {
+				"id": 127,
+				"seqNo": 27,
+				"name": "Finish_ClientInformation",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "next"
+				}]
+			}
+		]
+	}, {
+		"transactionId": 1006,
+		"projectId": 10045,
+		"transactionName": "OWNERSHIP_DETAILS",
+		"attributes": [{
+				"id": 128,
+				"seqNo": 28,
+				"name": "Ownership_Details_Grid",
+				"type": "grid",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "",
+					"value": ""
+				}]
+			},
+			{
+				"id": 129,
+				"seqNo": 29,
+				"name": "Identify Individual",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 128,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "deleteOfficerOwnedButton"
+				}]
+			},
+			{
+				"id": 130,
+				"seqNo": 30,
+				"name": "Full or Partial Legal Name",
+				"type": "textbox",
+				"waitTime": 120,
+				"parentAttrId": 128,
+				"index": "",
+				"fieldDetails": [{
+					"type": "xpath",
+					"value": "//input[@name='searchStr'][@size='40']"
+				}]
+			},
+			{
+				"id": 131,
+				"seqNo": 31,
+				"name": "SearchKeyOff",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 128,
+				"index": "",
+				"fieldDetails": [{
+					"type": "xpath",
+					"value": "//input[@name='next'][@value='Search iCap']"
+				}]
+			}, {
+				"id": 132,
+				"seqNo": 32,
+				"name": "ClickKeyOff",
+				"type": "radio",
+				"waitTime": 120,
+				"parentAttrId": 128,
+				"index": "",
+				"fieldDetails": [{
+					"type": "xpath",
+					"value": "//input[@type='radio'][@name='selectToAdd.value']"
+				}]
+			}, {
+				"id": 133,
+				"seqNo": 33,
+				"name": "addKeyOff",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 128,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "addSelectedCustomer"
+				}]
+			},
+			{
+				"id": 134,
+				"seqNo": 34,
+				"name": "Owershipdob",
+				"type": "textbox",
+				"waitTime": 120,
+				"parentAttrId": 128,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "dateOfBirth.value"
+				}]
+			},
+			{
+				"id": 135,
+				"seqNo": 35,
+				"name": "OwershipMarital",
+				"type": "dropdown",
+				"waitTime": 120,
+				"parentAttrId": 128,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "maritalStatus"
+				}]
+			}, {
+				"id": 136,
+				"seqNo": 36,
+				"name": "AddWoerShip",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 128,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "addOfficerOwnedButton"
+				}]
+			}, {
+				"id": 137,
+				"seqNo": 37,
+				"name": "FinshOwnership",
+				"type": "button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "next"
+				}]
+			}
+		]
+	}, {
+		"transactionId": 1007,
+		"projectId": 10045,
+		"transactionName": "RRE_ASSESSMENT",
+		"attributes": [{
+				"id": 138,
+				"seqNo": 38,
+				"name": "RRMLink",
+				"type": "link",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "PartialLinkText",
+					"value": "Risk Rating Methodology"
+					
+				}]
+			},
+			{
+				"id": 139,
+				"seqNo": 39,
+				"name": "RREFrame",
+				"type": "frame",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "rreIFrame"
+				}]
+			},
+			{
+				"id": 140,
+				"seqNo": 40,
+				"name": "OverrideRRM",
+				"type": "link",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "frame",
+				"frameAttrId": 139,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "rmOverrideInd"
+				}]
+			}, {
+				"id": 141,
+				"seqNo": 41,
+				"name": "SelectRRM",
+				"type": "Dropdown",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "frame",
+				"frameAttrId": 139,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "proposedRrmCode"
+				}]
+			}, {
+				"id": 142,
+				"seqNo": 42,
+				"name": "SelectSubRRM",
+				"type": "Dropdown",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "frame",
+				"frameAttrId": 139,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "proposedSmCode"
+				}]
+			}, {
+				"id": 143,
+				"seqNo": 43,
+				"name": "SelectSubSubRRM",
+				"type": "Dropdown",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "frame",
+				"frameAttrId": 139,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "proposedSsmCode"
+				}]
+			}, {
+				"id": 144,
+				"seqNo": 44,
+				"name": "RREComments",
+				"type": "TextBox",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "frame",
+				"frameAttrId": 139,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "rmOverrideComments"
+				}]
+			}, {
+				"id": 145,
+				"seqNo": 45,
+				"name": "RREFinish",
+				"type": "Button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "frame",
+				"frameAttrId": 139,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "BUTTON_L_BUTTON_FINISH"
+				}]
+			}, {
+				"id": 146,
+				"seqNo": 46,
+				"name": "RREFinish1",
+				"type": "Button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "frame",
+				"frameAttrId": 139,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "BUTTON_L_BUTTON_FINISH"
+				}]
+			},
+			{
+				"id": 147,
+				"seqNo": 47,
+				"name": "RRENextButton",
+				"type": "Button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "frame",
+				"frameAttrId": 139,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "BUTTON_Id_9"
+				}]
+			}, {
+				"id": 148,
+				"seqNo": 48,
+				"name": "RRECompeleted",
+				"type": "checkbox",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "isComplete.value"
+				}]
+			}, {
+				"id": 149,
+				"seqNo": 49,
+				"name": "RREReturn",
+				"type": "Button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "next"
+				}]
+			}, {
+				"id": 150,
+				"seqNo": 50,
+				"name": "YearEndDate",
+				"type": "TextBox",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "currentYearEndDate.value"
+				}]
+			}, {
+				"id": 151,
+				"seqNo": 51,
+				"name": "OASFinish",
+				"type": "Button",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "name",
+					"value": "next"
+				}]
+			}, {
+				"id": 152,
+				"seqNo": 51,
+				"name": "LinkTextHome",
+				"type": "link",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "LinkText",
+					"value": "Home"
+				}]
+			}, {
+				"id": 153,
+				"seqNo": 51,
+				"name": "OASFinish",
+				"type": "TextArea",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "creditsInProcessQueueTable"
+				}]
+			},{
+				"id": 154,
+				"seqNo": 52,
+				"name": "OASFinish1",
+				"type": "TextArea",
+				"waitTime": 120,
+				"parentAttrId": 0,
+				"windowOrFrame": "",
+				"frameAttrId": 0,
+				"index": "",
+				"fieldDetails": [{
+					"type": "id",
+					"value": "creditsInProcessQueueTable"
+				}]
+			}
+		]
+	}]
+}

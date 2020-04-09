@@ -1,0 +1,177 @@
+{
+	"browser": "ie",
+	"url": "http://172.24.30.46:8080/icap/",
+	"transactions": [{
+			"transactionId": 1007,
+			"projectId": 10045,
+			"transactionName": "T_LOGIN",
+			"attributes": [{
+					"id": 101,
+					"seqNo": 1,
+					"name": "juriOfIncorp",
+					"type": "textbox",
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"parent_attr_id": 0,
+					"fieldDetails": [{
+							"type": "id",
+							"value": "juriOfIncorpid"
+						},
+						{
+							"type": "xpath",
+							"value": "@juriOfIncorp"
+						}
+					]
+
+				},
+				{
+					"id": 102,
+					"seqNo": 2,
+					"name": "dateOfIncorp",
+					"type": "textbox",
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"parent_attr_id": 0,
+					"fieldDetails": [{
+						"type": "id",
+						"value": "dateOfIncorp"
+					}]
+				}, {
+					"id": 103,
+					"seqNo": 3,
+					"name": "OwnerShipDetails",
+					"type": "grid",
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"parent_attr_id": 0,
+					"fieldDetails": [{
+						"type": "",
+						"value": ""
+					}]
+				}, {
+					"id": 104,
+					"seqNo": 4,
+					"name": "name",
+					"type": "textbox",
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"parent_attr_id": 103,
+					"fieldDetails": [{
+						"type": "id",
+						"value": "nmae"
+					}]
+				}, {
+					"id": 105,
+					"seqNo": 5,
+					"name": "type",
+					"type": "textbox",
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"parent_attr_id": 103,
+					"fieldDetails": [{
+						"type": "id",
+						"value": "type"
+					}]
+				}, {
+					"id": 106,
+					"seqNo": 6,
+					"name": "percentage",
+					"type": "textbox",
+					"parent_attr_id": 103,
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"fieldDetails": [{
+						"type": "id",
+						"value": "percentage"
+					}]
+				}, {
+					"id": 107,
+					"seqNo": 7,
+					"name": "dob",
+					"type": "textbox",
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"parent_attr_id": 103,
+					"fieldDetails": [{
+						"type": "id",
+						"value": "dob"
+					}]
+				}, {
+					"id": 108,
+					"seqNo": 8,
+					"name": "status",
+					"type": "textbox",
+					"parent_attr_id": 103,
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"fieldDetails": [{
+						"type": "id",
+						"value": "status"
+					}]
+				}, {
+					"id": 109,
+					"seqNo": 9,
+					"name": "action:add",
+					"type": "button",
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"parent_attr_id": 103,
+					"fieldDetails": [{
+						"type": "id",
+						"value": "action:add"
+					}]
+				}, {
+					"id": 110,
+					"seqNo": 10,
+					"name": "Address",
+					"parent_attr_id": 103,
+					"type": "grid",
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"fieldDetails": [{
+						"type": "",
+						"value": ""
+					}]
+				}, {
+					"id": 111,
+					"seqNo": 11,
+					"name": "state",
+					"type": "textbox",
+					"parent_attr_id": 110,
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"fieldDetails": [{
+						"type": "id",
+						"value": "state"
+					}]
+				}, {
+					"id": 112,
+					"seqNo": 12,
+					"name": "pincode",
+					"type": "textbox",
+					"waitTime": 120,
+					"windowOrFrame": "",
+					"index": 0,
+					"parent_attr_id": 110,
+					"fieldDetails": [{
+						"type": "id",
+						"value": "pincode"
+					}]
+				}
+			]
+		}
+
+	]
+
+}

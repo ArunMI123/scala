@@ -1,0 +1,17 @@
+{  
+   "stepId":201,
+   "transactionId":1001,
+   "attributes":  
+      {  
+         "101":"Bm00961",
+         "102":"click"
+		 "103":"{Variable_Name}"
+		 
+      }
+	  "variables":
+	  {
+	  "VariableName":"PerformingCredit01",
+	  "VariableName1":"NonPerformingCredit02"
+	  }
+   
+}

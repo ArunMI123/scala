@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link
+	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script
+	src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<style>
+body {
+	margin: 5em;
+}
+
+.btn-cancel {
+	background-color: #405D9D;
+	color: #fff;
+}
+
+.btn-create {
+	background-color: #42AEEC;
+	color: #fff;
+}
+</style>
+</head>
+<body>
+	<div class="container" style="width: 800px;">
+		<div class="card bg-light">
+			<article class="card-body mx-auto" style="max-width: 500px;">
+				<h4 class="card-title mt-3 text-center">Register Agent</h4>
+				<form autocomplete="off" th:action="@{/agent/v1/saveAgent}"
+					th:object="${agent}" method="post">
+					<div class="form-group input-group">
+						<label for="agentName">Agent Name:</label> &nbsp;&nbsp; <input
+							class="form-control" th:field="*{agentName}" type="text" required>
+					</div>
+
+					<div class="form-group input-group">
+						<label for="agentURL">Agent URL:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input
+							class="form-control" th:field="*{agentURL}" type="text" required>
+					</div>
+
+					<div class="form-group input-group">
+						<label for="serverURL">Server URL:</label> &nbsp;&nbsp;&nbsp; &nbsp;<input
+							class="form-control" th:field="*{serverURL}" type="text" required>
+					</div>
+
+					<div class="form-group">
+						<button type="submit" class="btn btn-create btn-block">
+							Register Agent</button>
+						<!-- <button type="button" class="btn btn-cancel btn-block">
+							Cancel</button> -->
+					</div>
+				</form>
+			</article>
+		</div>
+	</div>
+</body>
+</html>
